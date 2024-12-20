@@ -1,0 +1,10 @@
+.like-icon {
+    fill: none;
+    stroke: black;
+    transition: fill 0.3s, stroke 0.3s;
+}
+
+.like-icon.liked {
+    fill: red;
+    stroke: red;
+}
