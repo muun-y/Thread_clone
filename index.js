@@ -65,15 +65,7 @@ cloudinary.config({
 const storage = multer.memoryStorage();
 const upload = multer({ storage: storage });
 
-// let mongoStore = MongoStore.create({
-//   mongoUrl: `mongodb+srv://${mongodb_user}:${mongodb_password}@cluster0.ttibm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`,
-//   crypto: {
-//     secret: mongodb_session_secret,
-//   },
-// });
-
 let mongoStore = MongoStore.create({
-  // mongoUrl: `mongodb+srv://${mongodb_user}:${mongodb_password}@db-mongodb-nyc3-58279-8a0af033.mongo.ondigitalocean.com/admin?authSource=admin`,
   mongoUrl: `${mongodb_url}`,
   crypto: {
     secret: mongodb_session_secret,
